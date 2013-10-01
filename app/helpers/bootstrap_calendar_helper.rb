@@ -18,10 +18,10 @@ module BootstrapCalendarHelper
 
     def header
       content_tag 'div', class: 'month_header row-fluid' do
-        standard = HEADER.map { |day| content_tag :div, class: 'span1 visible-desktop' do
+        standard = HEADER.map { |day| content_tag :div, class: 'span1 visible-md visible-lg' do
           day
         end }.join.html_safe
-        mobile = MOBILE_HEADER.map { |day| content_tag :div, class: 'span1 hidden-desktop', style: 'width: 14.1%' do
+        mobile = MOBILE_HEADER.map { |day| content_tag :div, class: 'span1 hidden-md hidden-kg', style: 'width: 14.1%' do
           day
         end }.join.html_safe
 
