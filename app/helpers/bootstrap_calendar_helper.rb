@@ -21,7 +21,7 @@ module BootstrapCalendarHelper
         standard = HEADER.map { |day| content_tag :div, class: 'span1 visible-md visible-lg' do
           day
         end }.join.html_safe
-        mobile = MOBILE_HEADER.map { |day| content_tag :div, class: 'span1 hidden-md hidden-kg', style: 'width: 14.1%' do
+        mobile = MOBILE_HEADER.map { |day| content_tag :div, class: 'span1 hidden-md hidden-lg', style: 'width: 14.1%' do
           day
         end }.join.html_safe
 
