@@ -43,7 +43,7 @@ module BootstrapCalendarHelper
 
     def day_classes(day)
       classes = ['span1']
-      classes << "today" if day == Date.today
+      classes << "today" if day == Time.zone.today
       classes << "notmonth" if day.month != date.month
       classes << "month" if day.month == date.month
       classes.empty? ? nil : classes.join(" ")
